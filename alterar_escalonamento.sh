@@ -7,6 +7,6 @@ echo "Digite o tipo de escalonamento (0: SCHED_OTHER, 1: SCHED_FIFO, 2: SCHED_RR
 read POLICY
 
 # Alterando a política de escalonamento usando chrt
-sudo chrt -p --$POLICY $PID
+sudo chrt -p $POLICY $PID
 
 echo "Política de escalonamento do processo $PID alterada."
